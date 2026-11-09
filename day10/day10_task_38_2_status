@@ -1,0 +1,11 @@
+import pandas as pd
+#import matplotlib.pyplot as plt
+import numpy as np
+
+df = pd.read_csv("students_missing.csv")
+
+df["Статус"] = np.where(df["Баллы"] >= 60, "Зачёт", "Незачёт")
+
+result = df[df["Статус"] == "Зачёт"]
+print(result)
+#result = df.groupby("Группа")[["Баллы", "Посещено"]].mean().reset_index()

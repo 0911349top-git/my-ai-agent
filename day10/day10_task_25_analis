@@ -1,0 +1,17 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("students.csv")
+
+result = df.groupby("Группа")["Баллы"].agg(["mean", "min", "max", "count"]).reset_index()
+
+print(result)
+
+result.to_csv("students_result_10.csv",index=False, encoding="utf-8")
+
+plt.bar(result["Группа"], result["mean"])
+plt.title("Средний балл по группам")
+plt.xlabel("Группа")
+plt.ylabel("Средний балл")
+
+plt.show()

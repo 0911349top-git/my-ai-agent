@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df = pd.read_csv("students.csv")
+
+#27. Pandas + Matplotlib
+
+result = df.groupby("Группа")["Баллы"].mean().reset_index()
+
+#28. Линейный график
+plt.plot(df["Имя"], df["Баллы"])
+plt.title("Баллы студентов")
+plt.xlabel("Студент")
+plt.ylabel("Баллы")
+plt.show()
+#Линейный график показывает изменение значений по порядку.

@@ -1,0 +1,10 @@
+import pandas as pd
+
+df = pd.read_csv("students.csv")
+
+#17. Сортировка результата группировки
+result_2 = df.groupby("Группа")["Посещено"].mean().reset_index()
+print(result_2)
+
+#18. Сохранение группировки в CSV
+result_2.to_csv("group_POS.csv", index=False, encoding="utf-8")

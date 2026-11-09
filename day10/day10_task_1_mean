@@ -1,0 +1,6 @@
+import pandas as pd
+
+df = pd.read_csv("students.csv")
+
+grouped = df.groupby("Группа")["Баллы"].mean()
+print(grouped)

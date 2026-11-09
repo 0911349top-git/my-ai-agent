@@ -1,0 +1,25 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df = pd.read_csv("students.csv")
+
+result = df.groupby("Группа")["Баллы"].mean().reset_index()
+
+plt.plot(df["Имя"], df["Баллы"])
+plt.title("Баллы студентов")
+plt.xlabel("Студент")
+plt.ylabel("Баллы")
+
+plt.plot(df["Имя"], df["Баллы"], marker="o")
+#30. Поворот подписей
+plt.xticks(rotation=45)
+
+#31. tight_layout()
+plt.tight_layout()
+#Помогает автоматически расположить элементы так, чтобы подписи не обрезались.
+
+#32. Сохранение графика
+plt.savefig("chart.png")
+#График сохраняется в PNG-файл.
+#Сохраняйте график до `plt.show()`, чтобы избежать проблем в некоторых средах.
+plt.show()

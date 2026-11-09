@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df = pd.read_csv("students.csv")
+
+plt.plot(df["Имя"], df["Баллы"])
+plt.title("Баллы студентов")
+plt.xlabel("Студент")
+plt.ylabel("Баллы")
+plt.show()

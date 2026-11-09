@@ -1,0 +1,26 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("students_missing.csv")
+
+result = df.groupby("Группа")[["Баллы", "Посещено"]].mean().reset_index()
+
+plt.figure(figsize=(6, 4))
+plt.bar(result["Группа"], result["Баллы"])
+plt.title("Средний балл по группам")
+plt.xlabel("Группа")
+plt.ylabel("Средний балл")
+plt.grid()
+plt.tight_layout()
+plt.savefig("chart_1.png")
+plt.show()
+
+plt.figure(figsize=(6, 4))
+plt.bar(result["Группа"], result["Посещено"])
+plt.title("Среднее посещение по группам")
+plt.xlabel("Группа")
+plt.ylabel("Среднее посещение")
+plt.grid()
+plt.tight_layout()
+plt.savefig("chart_2.png")
+plt.show()

@@ -1,0 +1,39 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = {
+    "Группа": ["1ИИ", "1ИИ", "2ИИ", "1ИИ", "1ИИ", "2ИИ","1ИИ", "1ИИ", "2ИИ", "1ИИ"],
+    "Имя": ["Анна", "Иван", "Олег", "Артем", "Иван", "Кира", "Иван", "Ольга", "Кирилл", "Лука"],
+    "Тест 1": [85, 72, 91, 85, 72, 91, 85, 72, 91, 60],
+    "Тест 2": [80, 70, 90, 80, 70, 90, 80, 70, 90, 60]
+}
+
+df = pd.DataFrame(data)
+
+r1 = df["Тест 1"].mean()
+r2 = df["Тест 2"].mean()
+min1 = df["Тест 1"].min()
+min2 = df["Тест 2"].min()
+max1 = df["Тест 1"].max()
+max2 = df["Тест 2"].max()
+
+df.to_csv("day_10_result.csv",index=False, encoding="utf-8")
+
+tests = ["Тест 1", "Тест 2"]
+means = [r1, r2]
+
+plt.bar(tests, means)
+plt.title("Средняя балл по Тестам")
+plt.xlabel("Тест")
+plt.ylabel("Средний балл")
+
+plt.show()
+
+
+#print(df)
+#print(r1)
+#print(r2)
+#print(min1)
+#print(min2)
+#print(max1)
+#print(max2)

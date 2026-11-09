@@ -1,0 +1,19 @@
+import pandas as pd
+
+df = pd.read_csv("students.csv")
+#print(df.head())
+
+grouped = df.groupby("Группа")["Баллы"].mean()
+print(grouped)
+
+#11. Несколько показателей через agg()
+stats = df.groupby("Группа")["Баллы"].agg(["mean", "min", "max", "count"])
+print(stats)
+
+#12. reset_index()
+stats = df.groupby("Группа")["Баллы"].mean().reset_index()
+print(stats)
+
+#14. Группировка нескольких числовых столбцов
+result = df.groupby("Группа")[["Баллы", "Посещено"]].mean()
+print(result)

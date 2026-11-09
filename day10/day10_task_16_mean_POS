@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df = pd.read_csv("students.csv")
+
+result = df.groupby("Группа")["Посещено"].mean().reset_index()
+
+plt.bar(result["Группа"], result["Посещено"])
+plt.title("Среднее посещение по группам")
+plt.xlabel("Группа")
+plt.ylabel("Среднее посещение")
+
+plt.show()

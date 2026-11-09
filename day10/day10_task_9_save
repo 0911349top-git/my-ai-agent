@@ -1,0 +1,9 @@
+import pandas as pd
+
+df = pd.read_csv("students.csv")
+
+result = df.groupby("Группа")["Баллы"].mean().reset_index()
+result = result.sort_values("Баллы", ascending=False)
+print(result)
+
+result.to_csv("average_by_group.csv", index=False, encoding="utf-8")

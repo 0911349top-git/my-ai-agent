@@ -1,0 +1,22 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("products.csv")
+
+df["Категория"] = ["Еда", "Еда", "Хоз", "Хоз",
+                   "Еда", "Хоз", "Хоз", "Еда"]
+
+print(df)
+
+result = df.groupby("Категория")["Цена"].mean().reset_index()
+
+print(result)
+
+result.to_csv("products_result_10.csv",index=False, encoding="utf-8")
+
+plt.bar(result["Категория"], result["Цена"])
+plt.title("Средняя цена по категориям")
+plt.xlabel("Категория")
+plt.ylabel("Средняя цена")
+
+plt.show()

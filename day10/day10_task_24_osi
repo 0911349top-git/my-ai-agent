@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+
+#22. Столбчатая диаграмма
+groups = ["1ИИ-1", "1ИИ-2"]
+average_scores = [78.3, 81.0]
+
+plt.bar(groups, average_scores)
+
+#23. Заголовок графика
+plt.title("Средний балл по группам")
+#title() задаёт заголовок.
+
+#24. Подписи осей
+plt.xlabel("Группа")
+plt.ylabel("Средний балл")
+#`xlabel()` подписывает горизонтальную ось, `ylabel()` — вертикальную.
+
+plt.show()
