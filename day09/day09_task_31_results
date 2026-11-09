@@ -1,0 +1,15 @@
+import pandas as pd
+
+df = pd.read_csv("results.csv")
+
+print(df.info())
+
+df["Процент посещаемости"] = df["Посещено"] / 20 * 100
+
+result = df[df["Баллы"] >= 70]
+
+sorted_df = result.sort_values("Баллы", ascending=False)
+
+sorted_df.to_csv("day_09_sorted.csv",index=False, encoding="utf-8")
+
+print(sorted_df)

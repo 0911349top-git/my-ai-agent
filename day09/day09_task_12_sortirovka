@@ -1,0 +1,6 @@
+import pandas as pd
+
+df = pd.read_csv("students.csv")
+
+sorted_df = df.sort_values("Баллы")
+print(sorted_df)

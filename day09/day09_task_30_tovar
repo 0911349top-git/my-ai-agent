@@ -1,0 +1,15 @@
+import pandas as pd
+
+df = pd.read_csv("products.csv")
+
+df["Стоимость"] = df["Цена"] * df["Количество"]
+
+sorted_df = df.sort_values("Стоимость", ascending=False)
+
+result = sorted_df[sorted_df["Цена"] >= 280]
+
+result.to_csv("day_09_tovar.csv",index=False, encoding="utf-8")
+
+print(result)
+
+

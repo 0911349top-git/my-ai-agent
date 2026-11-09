@@ -1,0 +1,7 @@
+import pandas as pd
+
+scores = pd.Series([70, 80, 90, 65, 80])
+print(scores)
+
+print(scores[0])
+print(scores[2])

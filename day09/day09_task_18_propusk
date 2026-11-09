@@ -1,0 +1,6 @@
+import pandas as pd
+
+missing_df = pd.read_csv("students_missing.csv")
+
+print(missing_df)
+print(missing_df.isna())

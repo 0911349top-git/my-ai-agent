@@ -1,0 +1,7 @@
+import pandas as pd
+
+df = pd.read_csv("students.csv")
+
+print(df.head(3))
+print()
+print(df.tail(2))

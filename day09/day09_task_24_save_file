@@ -1,0 +1,11 @@
+import pandas as pd
+
+missing_df = pd.read_csv("students_missing.csv")
+
+clean_df = missing_df.dropna()
+clean_df = clean_df.reset_index(drop=True)
+
+clean_df = clean_df.rename(columns={"Баллы": "Тестовый балл"})
+
+clean_df.to_csv("all_students_result.csv",index=False, encoding="utf-8")
+print(clean_df)

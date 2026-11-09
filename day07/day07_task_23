@@ -1,0 +1,7 @@
+import numpy as np
+
+scores = np.array([[45, 67, 82], 
+                   [91, 53, 74]])
+
+passed = scores[scores >= 60]
+print(passed)

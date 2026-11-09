@@ -1,0 +1,8 @@
+import pandas as pd
+
+ball_df = pd.read_csv("all_students_result.csv")
+
+hi_df = ball_df[ball_df["Тестовый балл"] >= 80]
+
+hi_df.to_csv("all_students_80.csv",index=False, encoding="utf-8")
+print(hi_df)
