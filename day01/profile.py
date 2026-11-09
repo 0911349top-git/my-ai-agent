@@ -1,0 +1,12 @@
+first_name = input("Введите имя: ")
+last_name = input("Введите фамилию: ")
+group = input("Введите группу: ")
+speciality = input("Введите специальность: ")
+it = input("Введите интересующую область IT: ")
+
+print("==КАРТОЧКА==")
+print("Имя:", first_name)
+print("Фамилия:", last_name)
+print("Группа:", group)
+print("Специальность:", speciality)
+print("Интерес:", it)
