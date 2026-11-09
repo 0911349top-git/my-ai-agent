@@ -1,0 +1,9 @@
+languages = ["Python", "Java", "C++", "VS Code"]
+
+instr = input('Введите программный инструмент : ')
+
+if instr in languages:
+    print('Есть такой')
+else:
+    languages.append(instr)
+    print(languages)

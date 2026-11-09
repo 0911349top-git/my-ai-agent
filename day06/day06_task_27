@@ -1,0 +1,10 @@
+import numpy as np
+
+t = np.array([60, 40, 50, 80, 90, 100])
+
+p = t * 1.07
+
+
+print(t)
+print(p)
+print(np.mean(p))

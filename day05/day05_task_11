@@ -1,0 +1,9 @@
+ball = [37, 74, 0, 98, 100, 16]
+
+count = 0
+
+for n in ball:
+    if n > 60:
+        count += 1
+
+print(count)

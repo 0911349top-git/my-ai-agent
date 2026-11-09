@@ -1,0 +1,6 @@
+languages = ["Python", "C++"]
+print(languages)
+print('=' * 30)
+
+languages.insert(1, "Java")
+print(languages)

@@ -1,0 +1,6 @@
+a = int(input("Введите сумму покупки: "))
+
+if a >= 5000 :
+        print(a * 0.1)
+else:
+    print(a)

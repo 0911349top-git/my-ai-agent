@@ -1,0 +1,6 @@
+answer = input("Введите да или yes: ")
+
+if answer == "да" or answer == "yes":
+    print("Ответ принят")
+else:
+    print("Другой ответ")

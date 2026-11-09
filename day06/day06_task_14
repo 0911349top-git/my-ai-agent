@@ -1,0 +1,7 @@
+import numpy as np
+
+t = np.array([12.0, 14.5, 13.6, 14.2, 15.0, 16.2, 11.4])
+
+print(np.mean(t))
+print(np.min(t))
+print(np.max(t))

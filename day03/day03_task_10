@@ -1,0 +1,6 @@
+age = int(input("Введите возраст : "))
+
+if age >= 16 :
+    has_ticket = input("Вы зарегистрированы? да/нет: ")
+    if has_ticket == "да":
+        print("Доступ разрешён")

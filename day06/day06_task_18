@@ -1,0 +1,7 @@
+import numpy as np
+
+numbers_0 = np.zeros(8)
+numbers_1 = np.ones(8)
+
+print(numbers_0)
+print(numbers_1)

@@ -1,0 +1,5 @@
+import numpy as np
+
+numbers = np.arange(2, 31, 2)
+
+print(numbers)

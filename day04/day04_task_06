@@ -1,0 +1,8 @@
+les = ["Py", "Ja", "C", "123", 2026]
+print(les)
+
+les.remove("Ja") # удаление по значению
+print(les)
+
+les.pop(-1) # vудаление по индексу
+print(les)

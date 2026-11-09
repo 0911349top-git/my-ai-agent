@@ -1,0 +1,5 @@
+file = open("hello.txt", "w", encoding="utf-8")
+file.write("Первая строка\n")
+file.write("Вторая строка\n")
+file.write("Третья строка\n")
+file.close()

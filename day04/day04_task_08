@@ -1,0 +1,10 @@
+rash = ['.txt', '.csv', '.json']
+
+print(rash)
+
+answer = input("Введите расширение: ")
+
+if answer in rash:
+    print("разрешено")
+else:
+    print("Не разрешено")

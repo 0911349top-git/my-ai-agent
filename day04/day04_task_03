@@ -1,0 +1,7 @@
+predmet = ["ЭВМ", "Разработка ИИ", "Linux", "Численные методы"]
+
+print(predmet)
+print('=' * 30)
+
+predmet[0] = "История"
+print(predmet)

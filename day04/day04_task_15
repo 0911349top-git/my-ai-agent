@@ -1,0 +1,9 @@
+student = {
+    "name": "Анна",
+    "group": "1ИИ-1-11",
+    "skills": ["Python", "Git", "AI"]
+}
+
+student["skills"].append("Linux")
+
+print(student["skills"])

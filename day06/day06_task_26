@@ -1,0 +1,11 @@
+import numpy as np
+
+t = np.array([60, 40, 80, 90, 75, 69, 88, 100])
+
+
+print(t.shape)
+print(np.mean(t))
+print(np.min(t))
+print(np.max(t))
+print(t[t >= 60])
+print(t[t < 60])

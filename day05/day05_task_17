@@ -1,0 +1,7 @@
+with open("hello.txt", "a", encoding="utf-8") as file:
+    file.write("Новая строка\n")
+
+with open("hello.txt", "r", encoding="utf-8") as file:
+    text = file.read()
+
+print(text)

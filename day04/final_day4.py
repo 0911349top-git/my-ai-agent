@@ -1,0 +1,35 @@
+name = input('Введите название проекта: ')
+author= input("Введите имя автора: ")
+group = input("Введите группу: ")
+count = int(input("Введите количество участников: "))
+status = input("Введите статус проекта: ")
+
+technologies = ["Python", "Java", "C++"]
+
+project = {
+    "title"        : name,
+    "author"       : author,
+    "group"        : group,
+    "members"      : count,
+    "status"       : status,
+    "technologies" : technologies
+}
+
+print(project["title"])
+print(project["author"])
+print(project["members"])
+print(project["technologies"])
+print(project["technologies"][0], project["technologies"][-1])
+print(len(project["technologies"]))
+
+tech = input('Введите технологию : ')
+
+if tech in project["technologies"]:
+    project["technologies"].remove(tech)
+else:
+    project["technologies"].append(tech)
+
+status = input("Введите статус проекта: ")
+project["status"] = status
+
+print(project)

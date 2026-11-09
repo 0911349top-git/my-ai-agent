@@ -1,0 +1,8 @@
+languages = ["Python", 'Java', 'C++']
+
+name = input('Введите название : ')
+
+if name in languages:
+    print("Есть")
+else:
+     print("Нет")

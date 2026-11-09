@@ -1,0 +1,13 @@
+student = {
+    "name": "Viktor",
+    "group": "1ИИ-1-11",
+    "age": 18
+}
+
+student["city"] = "Москва"
+
+print(student)
+print('-' * 30)
+
+student.pop("city")
+print(student)

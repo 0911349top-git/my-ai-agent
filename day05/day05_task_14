@@ -1,0 +1,4 @@
+while True:
+    answer = input("Введите пароль: ")
+    if answer == "Стоп":
+        break

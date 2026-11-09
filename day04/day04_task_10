@@ -1,0 +1,11 @@
+student = {
+    "name": "Viktor",
+    "group": "1ИИ-1-11",
+    "age": 18
+}
+
+student["age"] = 19
+
+student["speciality"] = "ИИ"
+
+print(student)

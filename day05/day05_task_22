@@ -1,0 +1,11 @@
+name = input('Введите имя : ')
+last_name = input('Введите фамилию : ')
+group = input('Введите группу : ')
+spec = input('Введите специальность : ')
+
+file = open("student.txt", "w", encoding="utf-8")
+file.write(name + '\n')
+file.write(last_name + '\n')
+file.write(group + '\n')
+file.write(spec + '\n')
+file.close()

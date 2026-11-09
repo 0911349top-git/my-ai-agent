@@ -1,0 +1,13 @@
+import numpy as np
+
+scores = np.arange(1, 51)
+
+new_scores = scores / 50 * 100
+
+print(scores)
+print(new_scores)
+
+a = new_scores[new_scores > new_scores.mean()]
+result = scores[(scores >= 40) & (scores <= 45)]
+print(a)
+print(result)

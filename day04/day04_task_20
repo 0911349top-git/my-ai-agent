@@ -1,0 +1,17 @@
+name = input('Введите название проекта: ')
+author= input("Введите имя автора: ")
+count = int(input("Введите количество участников: "))
+status = input("Введите статус проекта: ")
+
+project = {
+    "name": name,
+    "author": author,
+    "count": count,
+    "status": status
+}
+  
+project["technologies"] = ["Python", "Java", "C++"]
+
+print(project["name"])
+print(project["technologies"])
+print(project["technologies"][0])

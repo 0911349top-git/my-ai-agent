@@ -1,0 +1,7 @@
+ball = [37, 74, 0, 98, 100, 16]
+
+for n in ball:
+    if n > 60:
+        print(n, '= зачет')
+    else:
+        print(n, '= незачет')    

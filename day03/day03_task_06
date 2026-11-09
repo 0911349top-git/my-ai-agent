@@ -1,0 +1,7 @@
+password = "python123"
+a = input("Введите пароль: ")
+
+if a  == password:
+    print("Доступ разрешён")
+else:
+    print("Неверный пароль")

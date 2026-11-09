@@ -1,0 +1,6 @@
+import numpy as np
+
+numbers = np.array([84, 256, 100, 200, 1000])
+
+print(numbers)
+print(numbers * 1.1)

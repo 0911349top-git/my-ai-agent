@@ -1,0 +1,5 @@
+import numpy as np
+
+scores = np.array([45, 60, 72, 88, 51, 95])
+
+print(scores >= 60)

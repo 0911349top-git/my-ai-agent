@@ -1,0 +1,14 @@
+name = input('Введите имя: ')
+group = input("Введите группу: ")
+age = int(input("Введите возраст: "))
+speciality = input("Введите специальность: ")
+
+student = {
+  }
+
+student["name"] = name
+student["group"] = group
+student["age"] = age
+student["speciality"] = speciality
+
+print(student)

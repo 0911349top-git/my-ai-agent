@@ -1,0 +1,6 @@
+tech = ["ИИ", "Облако", "База Данных"]
+
+print(tech)
+
+print(tech[0])
+print(tech[-1])

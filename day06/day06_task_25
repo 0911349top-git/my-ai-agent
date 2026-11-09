@@ -1,0 +1,9 @@
+import numpy as np
+
+t = np.array([1, 2, 3, 4, 5, 6])
+
+print(t)
+print(np.mean(t))
+print(np.min(t))
+print(np.max(t))
+print(t[t < np.mean(t)])

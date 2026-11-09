@@ -1,0 +1,11 @@
+ball = [37, 74, 0, 98, 100, 16]
+
+file = open("scores.txt", "w", encoding="utf-8")
+
+for i in ball:
+    file.write(str(i) + '\n')
+file.close()
+
+with open("scores.txt", "r", encoding="utf-8") as file:
+    for line in file:
+        print(line.strip())

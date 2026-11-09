@@ -1,0 +1,4 @@
+import numpy as np
+
+numbers = np.array([0.5, 0.7, 0.9])
+print(numbers * 100)

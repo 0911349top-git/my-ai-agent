@@ -1,0 +1,5 @@
+languages = ["Python", "Java", "C++"]
+tech = [2, 3, 4, 5]
+
+print(languages[0],tech[0])
+print(languages[1],tech[1])

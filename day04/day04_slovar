@@ -1,0 +1,28 @@
+student = {
+    "name": "Анна",
+    "age": 18,
+    "group": "1ИИ-1-11"
+}
+
+print(student["name"])
+print(student["group"])
+
+student["age"] = 19
+print(student)
+
+#Добавление новой пары
+student = {"name": "Анна", "age": 18}
+student["group"] = "1ИИ-1-11"
+print(student)
+
+#Удаление из словаря
+student.pop("age")
+print(student)
+
+# Проверка ключа через in
+student = {"name": "Анна", "group": "1ИИ-1-11"}
+print("name" in student)
+print("age" in student)
+
+# len() для словаря
+print(len(student)) # 2 две пары ключ: значение

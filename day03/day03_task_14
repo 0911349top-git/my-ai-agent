@@ -1,0 +1,10 @@
+a = input("Введите логин: ")
+
+if a  == login:
+    p = input("Введите пароль: ")
+    if p == password:
+        print("Доступ разрешён")
+    else:
+        print("Неверный пароль")
+else:
+         print("Неверный логин")       

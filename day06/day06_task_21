@@ -1,0 +1,11 @@
+import numpy as np
+
+data = np.array([1, 2, 3, 4, 5, 6])
+
+average = np.mean(data)
+
+result = data[data < average]
+
+print(data)
+print(average)
+print(result)

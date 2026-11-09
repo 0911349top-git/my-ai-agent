@@ -1,0 +1,8 @@
+names = []
+for i in range (3):
+    n = input('Введите имя : ')
+    names.append(n)
+
+with open("participants.txt", "w", encoding="utf-8") as file:
+    for i in names:
+        file.write(i + '\n')

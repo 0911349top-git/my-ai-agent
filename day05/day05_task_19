@@ -1,0 +1,7 @@
+languages = ["Python", 'Java', 'C++', 'Linux', 'SQL']
+
+file = open("technologies.txt", "w", encoding="utf-8")
+
+for len in languages:
+    file.write(len + '\n')
+file.close()

@@ -1,0 +1,6 @@
+import numpy as np
+
+numbers = np.array([70, 75, 40, 90, 82])
+numbers[2] = 80
+
+print(numbers)
