@@ -6,6 +6,7 @@ df = pd.read_csv("students_missing.csv")
 
 df["Статус"] = np.where(df["Баллы"] >= 60, "Зачёт", "Незачёт")
 
-result = df[df["Статус"] == "Зачёт"]
+result = df.groupby(["Группа", "Статус"]).size().reset_index(name="Количество")
 print(result)
-#result = df.groupby("Группа")[["Баллы", "Посещено"]].mean().reset_index()
+
+
