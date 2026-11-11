@@ -1,4 +1,7 @@
+.venv/
+.vscode/
 __pycache__/
 *.pyc
-.venv/
-.env
+*.png
+*.csv
+*.ddwnld
