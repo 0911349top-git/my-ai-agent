@@ -2,7 +2,7 @@ import pandas as pd
 
 df = pd.read_csv("day_11_students.csv")
 
-#print(df.head())
+print(df.head())
 
 print(df.info())
 
